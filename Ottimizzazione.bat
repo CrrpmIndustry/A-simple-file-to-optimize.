@@ -1,0 +1,13 @@
+@echo off
+echo === Ottimizzazione del computer ===
+echo.
+echo Pulizia dei file temporanei...
+del /q %temp%\.
+echo.
+echo Pulizia del disco...
+cleanmgr /sagerun:1
+echo.
+echo Liberazione della memoria...
+echo.
+echo Spegnimento del computer per applicare le modifiche...
+shutdown /s /t 60 /f
